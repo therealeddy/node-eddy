@@ -1,19 +1,19 @@
-# Comando Uteis
+# Useful Commands
 
-# Criar Migration
+# Create Migration
 yarn sequelize migration:create --name=create-users
 
-# Rodar Migration
+# Run Migration
 yarn sequelize db:migrate
 
-# Desfazer Migrate
+# Undo Migrate
 yarn sequelize db:migrate:undo
 yarn sequelize db:migrate:undo:all
 
-# Criar Seed
+# Create Seed
 yarn sequelize seed:generate --name admin-user
 
-# Rodar Seed
+# Run Seed
 yarn sequelize db:seed:all
 
 # Docker
