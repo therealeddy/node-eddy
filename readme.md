@@ -146,7 +146,7 @@ Open your Visual Code ```settings.json``` file and add the following code snippe
 
 ## Author
 
-👤 **Eduardo Mauricio**
+👤 **[Eduardo Mauricio](https://github.com/therealeddy)**
 
 ## Show your support
 
