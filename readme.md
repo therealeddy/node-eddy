@@ -20,7 +20,12 @@ yarn add eslint -D
 Start ESLint with the command below.
 
 ```sh
-yarn eslint –init
+yarn eslint –-init
+```
+Or
+
+```sh
+./node_modules/.bin/eslint --init
 ```
 
 Answer the questions in the following order.
@@ -34,22 +39,25 @@ Answer the questions in the following order.
 3. **Which framework does your project use?** <br/>
 *None of these*
 
-4. **Where does your code run?** <br/>
+4. **Does your project use TypeScript?** <br/>
+*(y/N)*
+
+5. **Where does your code run?** <br/>
 *Node*
 
-5. **How would you like to define a style for your project?** <br/>
+6. **How would you like to define a style for your project?** <br/>
 *Use a popular style guide*
 
-6. **Which style guide do you want to follow?** <br/>
+7. **Which style guide do you want to follow?** <br/>
 *Airbnb*
 
-7. **What format do you want your config file to be in?** <br/>
+8. **What format do you want your config file to be in?** <br/>
 *JavaScript*
 
-8. **Do you want to downgrade?** <br/>
+9. **Do you want to downgrade?** <br/>
 *Y*
 
-9. **Would you like to install them now with npm?** <br/>
+10. **Would you like to install them now with npm?** <br/>
 *Y*
 
 Once installed, notice that a ```package-lock.json``` file was generated at the root of the project, because it was installed using NPM.
@@ -146,7 +154,7 @@ Open your Visual Code ```settings.json``` file and add the following code snippe
 
 ## Author
 
-👤 **Eduardo Mauricio**
+👤 **[Eduardo Mauricio](https://github.com/therealeddy)**
 
 ## Show your support
 
