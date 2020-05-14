@@ -307,7 +307,7 @@ module.exports = {
 
 <br><br>
 
-## Microsoft Visual Code Config
+## Microsoft Visual Code
 
 Open your Visual Code ```settings.json``` file and add the following code snippet.
 
