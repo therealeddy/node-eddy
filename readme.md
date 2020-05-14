@@ -24,8 +24,8 @@ Advanced template for NodeJS.
 - **[ESLint](#eslint)**
 - **[Microsoft Visual Code](#microsoft-visual-code)**
 - **[Author](#author)**
+- **[License](#license)**
 - **[Show your support](#show-your-support)**
-
 
 <br><br>
 
@@ -370,6 +370,10 @@ Open your Visual Code ```settings.json``` file and add the following code snippe
 ## Author
 
 👤 **[Eduardo Mauricio](https://github.com/therealeddy)**
+
+## License
+
+MIT © **[Node Eddy](LICENSE)**
 
 ## Show your support
 
