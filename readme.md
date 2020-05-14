@@ -305,6 +305,15 @@ module.exports = {
 };
 ```
 
+Create a file at the root of the project called ```.prettierrc``` and paste the json below.
+
+```json
+{
+  "singleQuote": true,
+  "trailingComma": "es5"
+}
+```
+
 <br><br>
 
 ## Microsoft Visual Code
