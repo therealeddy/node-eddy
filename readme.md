@@ -305,6 +305,8 @@ module.exports = {
 };
 ```
 
+<br><br>
+
 ## Microsoft Visual Code Config
 
 Open your Visual Code ```settings.json``` file and add the following code snippet.
@@ -353,6 +355,8 @@ Open your Visual Code ```settings.json``` file and add the following code snippe
   ],
 }
 ```
+
+<br><br>
 
 ## Author
 
