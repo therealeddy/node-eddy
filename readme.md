@@ -15,7 +15,7 @@
 
 ## Overview
 
-Advanced template for NodeJS.
+Advanced template for Node.
 
 - **[Structure](#structure)**
 - **[Dependencies](#dependencies)**
