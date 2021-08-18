@@ -19,9 +19,9 @@ Advanced template for Node.
 
 - **[Structure](#structure)**
 - **[Dependencies](#dependencies)**
-- **[Useful commands](#useful-commands)**
 - **[Husky](#husky)**
 - **[ESLint](#eslint)**
+- **[Useful commands](#useful-commands)**
 - **[Author](#author)**
 - **[License](#license)**
 - **[Show your support](#show-your-support)**
@@ -74,57 +74,6 @@ Remember to execute the command ```yarn upgrade``` to update with dependencies.
 - nodemon
 - sequelize-cli
 - sucrase
-
-<br><br>
-
-## Useful commands
-
-Create Migration
-```sh
-yarn sequelize migration:create --name=create-users
-```
-
-Run Migration
-```sh
-yarn sequelize db:migrate
-```
-
-Undo Migrate
-```sh
-yarn sequelize db:migrate:undo
-```
-```sh
-yarn sequelize db:migrate:undo:all
-```
-
-Create Seed
-```sh
-yarn sequelize seed:generate --name admin-user
-```
-
-Run Seed
-```sh
-yarn sequelize db:seed:all
-```
-
-Containers
-```sh
-docker ps
-docker ps -a
-docker start <id>
-docker stop <id>
-docker container rm <id>
-```
-
-Redis
-```sh
-docker run --name redisdatabase -p 6379:6379 -d -t redis:alpine
-```
-
-Docker
-```sh
-docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
-```
 
 <br><br>
 
@@ -212,6 +161,56 @@ For better standardization of codes within the project, we use the **[ESLint](ht
 Follow the installation instructions on the link below: <br>
 **[Eslint, Prettier and EditorConfig](https://www.notion.so/Padr-es-de-projeto-com-ESLint-Prettier-e-EditorConfig-0b57b47a24724c859c0cf226aa0cc3a7)**
 
+<br><br>
+
+## Useful commands
+
+Create Migration
+```sh
+yarn sequelize migration:create --name=create-users
+```
+
+Run Migration
+```sh
+yarn sequelize db:migrate
+```
+
+Undo Migrate
+```sh
+yarn sequelize db:migrate:undo
+```
+```sh
+yarn sequelize db:migrate:undo:all
+```
+
+Create Seed
+```sh
+yarn sequelize seed:generate --name admin-user
+```
+
+Run Seed
+```sh
+yarn sequelize db:seed:all
+```
+
+Containers
+```sh
+docker ps
+docker ps -a
+docker start <id>
+docker stop <id>
+docker container rm <id>
+```
+
+Redis
+```sh
+docker run --name redisdatabase -p 6379:6379 -d -t redis:alpine
+```
+
+Docker
+```sh
+docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+```
 
 <br><br>
 
