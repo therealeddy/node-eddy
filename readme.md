@@ -1,5 +1,5 @@
 <h2 align="center">
-  <img src="docs/node-eddy.png" height="90" alt="node-eddy" />
+  <img src="docs/logo.png" height="90" alt="node-eddy" />
 </h2>
 
 <br>
