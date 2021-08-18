@@ -1,12 +1,12 @@
 <h2 align="center">
-  <img src="docs/node-eddy.png" height="90" alt="node-eddy" />
+  <img src="docs/logo.png" height="90" alt="node-eddy" />
 </h2>
 
 <br>
 
 <div align="center">
 
-[![version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/therealeddy/node-eddy/releases)<space><space>
+[![version](https://img.shields.io/badge/version-1.1.1-blue.svg)](https://github.com/therealeddy/node-eddy/releases)<space><space>
 [![documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](#overview)
 
 </div>
@@ -15,14 +15,13 @@
 
 ## Overview
 
-Advanced template for NodeJS.
+Advanced template for Node.
 
 - **[Structure](#structure)**
 - **[Dependencies](#dependencies)**
-- **[Docker](#docker)**
 - **[Husky](#husky)**
 - **[ESLint](#eslint)**
-- **[Microsoft Visual Code](#microsoft-visual-code)**
+- **[Useful commands](#useful-commands)**
 - **[Author](#author)**
 - **[License](#license)**
 - **[Show your support](#show-your-support)**
@@ -75,59 +74,6 @@ Remember to execute the command ```yarn upgrade``` to update with dependencies.
 - nodemon
 - sequelize-cli
 - sucrase
-
-<br><br>
-
-## Docker
-
-Useful commands for using Docker
-
-Create Migration
-```sh
-yarn sequelize migration:create --name=create-users
-```
-
-Run Migration
-```sh
-yarn sequelize db:migrate
-```
-
-Undo Migrate
-```sh
-yarn sequelize db:migrate:undo
-```
-```sh
-yarn sequelize db:migrate:undo:all
-```
-
-Create Seed
-```sh
-yarn sequelize seed:generate --name admin-user
-```
-
-Run Seed
-```sh
-yarn sequelize db:seed:all
-```
-
-Containers
-```sh
-docker ps
-docker ps -a
-docker start <id>
-docker stop <id>
-docker container rm <id>
-```
-
-Redis
-```sh
-docker run --name redisdatabase -p 6379:6379 -d -t redis:alpine
-```
-
-Sequelize
-```sh
-docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
-```
 
 <br><br>
 
@@ -210,159 +156,60 @@ Below are listed possible questions that Husky will ask.
 ## ESLint
 
 For better standardization of codes within the project, we use the **[ESLint](https://eslint.org/)** and **[Prettier](https://prettier.io/)** libraries.
+        
 
-Install the ```ESLint``` and ```Prettier - Code formatter``` extensions in your Visual Code.
-
-Add ESLint as a development dependency.
-
-```sh
-yarn add eslint -D
-```
-
-Start ESLint with the command below.
-
-```sh
-yarn eslint –-init
-```
-Or
-
-```sh
-./node_modules/.bin/eslint --init
-```
-
-Answer the questions in the following order.
-
-1. **How Would you like to use ESLint?** <br/>
-*To check syntax, find problems, and enforce code style*
-
-2. **What type of modules does your project use?** <br/>
-*JavaScript modules (import/export)*
-
-3. **Which framework does your project use?** <br/>
-*None of these*
-
-4. **Does your project use TypeScript?** <br/>
-*(y/N)*
-
-5. **Where does your code run?** <br/>
-*Node*
-
-6. **How would you like to define a style for your project?** <br/>
-*Use a popular style guide*
-
-7. **Which style guide do you want to follow?** <br/>
-*Airbnb*
-
-8. **What format do you want your config file to be in?** <br/>
-*JavaScript*
-
-9. **Do you want to downgrade?** <br/>
-*Y*
-
-10. **Would you like to install them now with npm?** <br/>
-*Y*
-
-Once installed, notice that a ```package-lock.json``` file was generated at the root of the project, because it was installed using NPM.
-
-Remove the ```package-lock.json``` file and install the dependencies again.
-
-```sh
-yarn
-```
-
-Once installed, add the following dependencies in development mode.
-
-```sh
-yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
-```
-
-Once installed, notice that an ```.eslintrc.js``` file was generated at the root of the project, remove what is inside the file and paste the following code snippet.
-
-```javascript
-module.exports = {
-  env: {
-    es6: true,
-    node: true,
-  },
-  extends: ['airbnb-base', 'prettier'],
-  plugins: ['prettier'],
-  globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
-  },
-  parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module',
-  },
-  rules: {
-    "prettier/prettier": "error",
-    "linebreak-style": 0,
-    "class-methods-use-this": "off",
-    "no-param-reassign": "off",
-    "camelcase": "off",
-    "no-unused-vars": ["error", { "argsIgnorePattern": "next" }]
-  },
-};
-```
-
-Create a file at the root of the project called ```.prettierrc``` and paste the json below.
-
-```json
-{
-  "singleQuote": true,
-  "trailingComma": "es5"
-}
-```
+Follow the installation instructions on the link below: <br>
+**[Eslint, Prettier and EditorConfig](https://www.notion.so/Padr-es-de-projeto-com-ESLint-Prettier-e-EditorConfig-0b57b47a24724c859c0cf226aa0cc3a7)**
 
 <br><br>
 
-## Microsoft Visual Code
+## Useful commands
 
-Open your Visual Code ```settings.json``` file and add the following code snippet.
+Create Migration
+```sh
+yarn sequelize migration:create --name=create-users
+```
 
-```json
-{
-  "window.zoomLevel": 0,
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.colorTheme": "Dracula",
-  "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 16,
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.rulers": [80, 120],
-  "editor.renderLineHighlight": "gutter",
-  "editor.tabSize": 2,
-  "terminal.integrated.fontSize": 14,
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  "emmet.syntaxProfiles": {
-    "javascript": "jsx"
-  },
-  "javascript.updateImportsOnFileMove.enabled": "never",
-  "editor.parameterHints.enabled": false,
-  "breadcrumbs.enabled": true,
-  "javascript.suggest.autoImports": false,
-  "eslint.autoFixOnSave": true,
-  "eslint.validate": [
-    {
-      "language": "javascript",
-      "autoFix": true
-    },
-    {
-      "language": "javascriptreact",
-      "autoFix": true
-    },
-    {
-      "language": "typescript",
-      "autoFix": true
-    },
-    {
-      "language": "typescriptreact",
-      "autoFix": true
-    },
-  ],
-}
+Run Migration
+```sh
+yarn sequelize db:migrate
+```
+
+Undo Migrate
+```sh
+yarn sequelize db:migrate:undo
+```
+```sh
+yarn sequelize db:migrate:undo:all
+```
+
+Create Seed
+```sh
+yarn sequelize seed:generate --name admin-user
+```
+
+Run Seed
+```sh
+yarn sequelize db:seed:all
+```
+
+Containers
+```sh
+docker ps
+docker ps -a
+docker start <id>
+docker stop <id>
+docker container rm <id>
+```
+
+Redis
+```sh
+docker run --name redisdatabase -p 6379:6379 -d -t redis:alpine
+```
+
+Docker
+```sh
+docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
 ```
 
 <br><br>
